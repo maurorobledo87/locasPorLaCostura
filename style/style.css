@@ -9,6 +9,7 @@ body{
 }
 .encabezado{
     background: rgb(230,185,205);   
+    background: linear-gradient(56deg, rgba(230,185,205,0.896796218487395) 43%, rgba(233,148,228,0.036852240896358524) 100%);
     position: sticky;
     top: 0%;
     width: 100%;
@@ -16,6 +17,11 @@ body{
     grid-template-rows: 70% 30%; 
     grid-template-columns: 20% 60% 20%;    
 }
+
+.nav-items:hover{
+    transform: scale(1.1);
+}
+
 .listaNav{
     display: flex;
     flex-direction: row;
@@ -131,8 +137,18 @@ body{
     animation-delay: 0;
     animation-iteration-count: 1;    
     animation-timing-function: ease-in;
+}
+@keyframes expandir{
+    5%{
+        transform: scale(1.05);
+    }
+    10%{
+        transform: scale(1.10);
+    }
     
-    
+    0%{
+        transform: scale(1);
+    }
 }
 
 
