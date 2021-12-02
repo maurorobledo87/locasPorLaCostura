@@ -1,0 +1,499 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    grid-template-rows: 0.9fr auto 1fr;
+    
+}
+.encabezado{
+    background: rgb(230,185,205);
+    background: linear-gradient(56deg, rgba(230,185,205,0.896796218487395) 43%, rgba(233,148,228,0.036852240896358524) 100%);
+    position: sticky;
+    top: 0%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 70% 30%; 
+    grid-template-columns: 20% 60% 20%;
+    
+}
+.listaNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+} 
+  
+.buscador{
+    grid-row: 1;
+    grid-column: 1;
+    height: 17px;
+    place-self: center;
+}
+.logo{
+    grid-column: 2;
+    grid-row: 1;
+    width: 200px;
+    height: 163px;
+}
+.contLogo{
+    justify-self: center;
+}
+.nav{
+    grid-row: 2;
+    grid-column: 2;
+    width: 100%;
+    align-self: center;
+}
+.nav-items{
+    padding: 1%;
+    list-style: none;
+}
+.nav-list{
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    font-weight: bold;
+    transition: all 1s;
+}
+.nav-items:hover{
+    transform: scale(1.1);
+}
+.seccion{
+    grid-row: 2;
+ 
+}
+.contBotones{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.boton{
+    padding: 5px;
+    background: transparent;
+    cursor: pointer;
+    grid-column: 3;
+    grid-row: 1;
+}
+
+ .boton:hover{
+     background-color: rgb(253, 225, 188);
+ }
+.pieDePag{
+    display: flex; 
+    background-color: lightgray;
+    grid-row: 3;
+    margin-top: 7%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    grid-column-gap: 150px;
+    min-width: 100%;
+}
+
+.listaFooter{ 
+    list-style: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold; 
+}
+.contList{
+    margin: 15px 0;
+}
+
+.linkItems{
+    color: black;
+    text-decoration: none;
+    
+}
+.contRedes{
+    margin: 15px 0;
+}
+.titulo{
+    padding: 35px;
+    margin-bottom: 20px;
+    display: flex; 
+    justify-content: center;
+  
+        
+}
+.integrador{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    display: grid;
+    grid-template-areas:      
+      "prod1 prod2 prod3 prod4"
+      "prod5 prod6 prod7 prod8";
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 25%;
+    grid-row-gap: 50px;
+    animation-name: expandir;
+    animation-duration: 1s;
+    animation-delay: 0;
+    animation-iteration-count: 1;    
+    animation-timing-function: ease-in;
+    
+    
+}
+
+
+@keyframes expandir{
+    5%{
+        transform: scale(1.05);
+    }
+    10%{
+        transform: scale(1.10);
+    }
+    
+    0%{
+        transform: scale(1);
+    }
+   
+}
+
+.pic{
+    justify-self: center;
+  
+}
+.prductosTutoriales{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 70px 80px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+}
+
+.botonMasProductos{
+    margin-left: 40%;
+    margin-top: 50px;
+}
+.masProductos{
+    padding: 1%;
+    font-weight: 900;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: palevioletred;
+    cursor: pointer;
+    }
+.contacto{
+        display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    /* background-color: aqua; */
+    grid-area: conta;
+    justify-items: center;
+    text-align: -webkit-center;
+    padding: 0 20% 0 10%;
+}
+    
+.nombre{
+    padding: 5px;
+}
+.email{
+    padding: 5px;
+    margin-top: 10px;
+}
+.asunto{
+    padding: 5px;
+    margin-top: 10px;
+}
+.mensaje{
+    padding: 5px;
+    margin-top: 10px;
+
+}
+
+.encabezadoContacto{    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    /* background-color: blue; */
+    grid-area: redes;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+}
+.loren{
+    display: block;
+    grid-area: loren;
+    /* background-color: pink; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    padding: 13% 20%;
+    }
+
+
+.instaContacto{
+    text-decoration: none;
+    color: black;
+    }
+#contactoArea{
+    display: grid;
+    grid-template-areas:
+        "redes redes"
+        "loren conta";
+    grid-template-columns: 1fr 2fr;
+}
+.redesConta{
+    padding: 3%;
+
+}
+#enviar{
+    margin-right: 37%;
+}
+.icono{
+    width: 50px;
+}
+    /* RESPONSIVE */
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .integrador {      
+        grid-template-areas:
+            "prod1 prod2 prod3"
+            "prod4 prod5 prod6"
+            "prod7 prod8 prod9";
+        grid-template-columns: 33%;
+        grid-row-gap: 5%;
+        grid-template-rows: 33%;
+    }
+    .encabezado{
+        grid-template-rows: 80% 20%;
+        grid-template-columns: 25% 50% 25% ;
+    }
+    .pieDePag{
+        grid-column-gap: 56px;
+        margin-top: 10%;
+        height: 75%;
+    }
+    .contList{
+        text-align: center;
+    }
+    .redes{
+        font-size: larger;
+    }
+    .icono{
+        width: 35px ;
+    }
+}
+@media screen and (min-width:600px) and (max-width:767px){
+    .pieDePag{
+        grid-column-gap: 44px;
+        margin-top: 15%;
+        height: 67%;
+    }
+    .integrador {      
+        grid-template-areas:
+            "prod1 prod2"
+            "prod3 prod4"
+            "prod5 prod6"
+            "prod7 prod8"
+            "prod9 prod10";
+        grid-template-columns: 50%;
+        grid-row-gap: 5%;
+        grid-template-rows: 20%;
+    } 
+    .contList{
+        text-align: center;
+    }
+    .redes{
+        font-size: larger;
+    }
+    .icono{
+        width: 35px ; 
+    }
+    .encabezado{
+        grid-template-rows: 80% 20%;
+        grid-template-columns: 20% 60% 20% ;
+    }
+    .logo{
+        width: 172px;
+        height: 134px;
+    }
+    body{
+        grid-template-rows: 0.85fr auto 1fr;
+    }
+    .buscador{
+        width: 118px;
+    }
+    .contBotones{
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:480px) and (max-width:599px){
+    .integrador {      
+        grid-template-areas:
+            "prod1 prod2"
+            "prod3 prod4"
+            "prod5 prod6"
+            "prod7 prod8"
+            "prod9 prod10";
+        grid-template-columns: 50%;
+        grid-row-gap: 5%;
+        grid-template-rows: 20%;
+    }
+    .pieDePag{
+        height: 62%;
+        margin-top: 22%;
+    }
+    .ubica{
+        display: none;
+    }
+    .contList{
+        text-align: center;
+    }
+    .redes{
+        font-size: larger;
+    }
+    .icono{
+        width: 35px ; 
+    }
+    #header{
+        display: grid;
+        grid-template-areas: 
+        "a b c"
+        "d d d";
+    }
+    .logo{
+        width: 182px;
+        height: 148px;
+        grid-area: b;
+
+    }
+    .buscador{
+        grid-area: a;
+        width: inherit;
+    }
+    .contBotones{
+        grid-area: c;
+        flex-direction: column;
+    }
+    .nav{
+        grid-area: d;
+    }
+    .titulo{
+        font-size: 19px;
+    }
+}
+@media screen and (min-width:320px) and (max-width:479px){
+    .encabezado{
+    
+    display: flex;
+    align-items: center;
+    justify-items: stretch;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 380px;
+    }
+    .buscador{
+        height: 11px;
+        width: 98px;
+        font-size: xx-small;
+    }
+    
+    .integrador {      
+        grid-template-areas:
+            "prod1" 
+            "prod2"
+            "prod3" 
+            "prod4"
+            "prod5" 
+            "prod6"
+            "prod7" 
+            "prod8"
+            "pred9";
+        grid-template-columns: 100%;
+        grid-row-gap: 1%;
+        grid-template-rows: 8%; 
+        }
+        .pieDePag{
+            height: 62%;
+            margin-top: 22%;
+            grid-column-gap: 58px;
+        }
+        .ubica{
+            display: none;
+        }
+        .contList{
+            text-align: center;
+        }
+        .redes{
+            font-size: larger;
+        }
+        .icono{
+            width: 35px ;
+        }     
+        .titulo{
+            font-size: 15px;
+        }
+        .contacto{
+            justify-content: start;
+            grid-area: auto;
+            margin-left: 56px;
+            padding: 0;
+            margin-top: 10px;
+        }
+        .prductosTutoriales{
+            flex-direction: column;
+            margin: 31px;
+            text-align-last: center;
+        }
+        .masProductos{
+            margin-left: -52px;
+            margin-bottom: 51px;
+        }
+        .listaNav{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            /* flex-wrap: nowrap; */
+            align-items: center;
+        }
+        .encabezadoContacto{
+            display: flex;
+            flex-direction: column;
+            }
+        .loren{
+            display: none;
+        }    
+        
+
+        
+}
+        
+        
+
+    
+
+
+           
+   
+    
+
+
+  
+    
+
+    
+        
+
+    
+
+
+    
+
+
+
+
+    
+
+
+
